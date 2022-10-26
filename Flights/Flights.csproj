@@ -83,10 +83,6 @@
     <None Include="wwwroot\images\why_2.svg" />
     <None Include="wwwroot\images\why_3.jpg" />
     <None Include="wwwroot\images\why_3.svg" />
-    <None Include="wwwroot\js\custom.js" />
-    <None Include="wwwroot\js\elements.js" />
-    <None Include="wwwroot\js\jquery-3.2.1.min.js" />
-    <None Include="wwwroot\js\news.js" />
     <None Include="wwwroot\plugins\easing\easing.js" />
     <None Include="wwwroot\plugins\font-awesome-4.7.0\css\font-awesome.css" />
     <None Include="wwwroot\plugins\font-awesome-4.7.0\css\font-awesome.min.css" />
