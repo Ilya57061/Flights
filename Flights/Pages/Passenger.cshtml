@@ -11,24 +11,34 @@
 					{
 						
 						<div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
-							<label for="firstName" class="register_label">Введите фамилию: </label>
+							<label for="firstName" class="register_label">Фамилия: </label>
 							<input type="text" id="firstName" class="register_input register_input_1" name="passengers[@i].firstName" placeholder="Иванов" required="required">
-							<label for="firstName" class="register_label">Введите Имя: </label>
+							<label for="firstName" class="register_label">Имя: </label>
 							<input type="text" id="lastName" class="register_input register_input_2" name="passengers[@i].lastName" placeholder="Иван" required="required">
-							<label for="birthDate" class="register_label">Введите дату рождения: </label>
+							<label for="birthDate" class="register_label register_label_birthDate">Дата рождения: </label>
 							<input type="date" id="birthDate" class="register_input register_input_3" name="passengers[@i].birthDate" required="required">
-							<label for="genders" class="register_label">Введите ваш пол: </label>
-							<input list="genders" id="genders" type="text" class="register_input register_input_4" name="passengers[@i].gender" placeholder="М/Ж" required="required">
-							<label for="firstName" class="register_label">Введите номер паспорта: </label>
-							<input type="text" id="doc" class="register_input search_input_5" name="passengers[@i].docNumber" placeholder="AB1234567" required="required">
+							<label for="genders" class="register_label">Пол: </label>
+							<select size="1" class="register_select">
+							<option>Мужской</option>
+							<option>Женский</option>
+							</select>
+							<!--<input list="genders" id="genders" type="text" class="register_input register_input_4" name="passengers[@i].gender" placeholder="М/Ж" required="required">-->
+							<label for="firstName" class="register_label">Номер паспорта: </label>
+							<input type="text" id="doc" class="register_input search_input_5" name="passengers[@i].docNumber" placeholder="АВ1234567" required="required">
 						</div>
 					}
-					<div class = "AdditionalInformation">
-						<div class="StyledTypography"><span>На почту мы отправим билет,вышлем уведомления об изменениях в рейсе или в случае других экстренных ситуаций</span></div>
-					
-						<input type="text" name="phone" placeholder="Введите телефон" size="18" />
-						<input type="text" name="mail" placeholder="Введите эл.почту" size="18" />
-						<button class="home_search_button" type="submit">Select</button>
+					<div>
+					<h1 style="margin-top: 24px;"> Регистрация покупателя</h1>
+					<div class="warning_text">
+						<p >На почту мы отправим билет, вышлем уведомления об изменениях в рейсе или в случае других экстренных ситуаций</p>
+					</div>
+					<div class="d-flex flex-lg-row flex-column align-items-start justify-content-start">
+					<label for="phone" class="register_label">Телефон:</label>
+					<input type="text" id="phone" class="register_input_phone" name="phone" placeholder="Телефон" size="18" />
+					<label for="mail" class="register_label">Электронная почта:</label>
+					<input type="text" id="mail" class="register_input_mail" name="mail" placeholder="Электронная почта" size="18" />
+					</div>
+					<button class="home_search_button" type="submit">Select</button>	
 					</div>
 				</form>
 				<datalist id="genders">

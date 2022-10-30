@@ -37,7 +37,6 @@
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
-
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -45,7 +44,6 @@ body {
   background: #ffffff;
   color: #a5a5a5;
 }
-
 div {
   display: block;
   position: relative;
@@ -53,12 +51,10 @@ div {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 ul {
   list-style: none;
   margin-bottom: 0px;
 }
-
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -69,7 +65,6 @@ p {
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
-
 p a {
   display: inline;
   position: relative;
@@ -81,11 +76,9 @@ p a {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 p:last-of-type {
   margin-bottom: 0;
 }
-
 a,
 a:hover,
 a:visited,
@@ -96,47 +89,36 @@ a:link {
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
-
 p a:active {
   position: relative;
   color: #ff6347;
 }
-
 p a:hover {
   color: #ffffff;
   background: #ffa07f;
 }
-
 p a:hover::after {
   opacity: 0.2;
 }
-
 ::selection {
 }
-
 p::selection {
 }
-
 h1 {
   font-size: 72px;
 }
-
 h2 {
   font-size: 48px;
 }
-
 h3 {
   font-size: 36px;
 }
-
 h4 {
   font-size: 24px;
 }
-
 h5 {
   font-size: 18px;
 }
-
 h1,
 h2,
 h3,
@@ -149,7 +131,6 @@ h6 {
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
-
 h1::selection,
 h2::selection,
 h3::selection,
@@ -157,43 +138,34 @@ h4::selection,
 h5::selection,
 h6::selection {
 }
-
 .form-control {
   color: #db5246;
 }
-
 section {
   display: block;
   position: relative;
   box-sizing: border-box;
 }
-
 .clear {
   clear: both;
 }
-
 .clearfix::before,
 .clearfix::after {
   content: "";
   display: table;
 }
-
 .clearfix::after {
   clear: both;
 }
-
 .clearfix {
   zoom: 1;
 }
-
 .float_left {
   float: left;
 }
-
 .float_right {
   float: right;
 }
-
 .trans_200 {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -201,7 +173,6 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .trans_300 {
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
@@ -209,7 +180,6 @@ section {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-
 .trans_400 {
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
@@ -217,7 +187,6 @@ section {
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
 }
-
 .trans_500 {
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -225,29 +194,23 @@ section {
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .fill_height {
   height: 100%;
 }
-
 .super_container {
   width: 100%;
   overflow: hidden;
 }
-
 .prlx_parent {
   overflow: hidden;
 }
-
 .prlx {
   height: 130% !important;
 }
-
 .parallax-window {
   min-height: 400px;
   background: transparent;
 }
-
 .parallax_background {
   position: absolute;
   top: 0;
@@ -255,7 +218,6 @@ section {
   width: 100%;
   height: 100%;
 }
-
 .background_image {
   position: absolute;
   top: 0;
@@ -266,7 +228,6 @@ section {
   background-size: cover;
   background-position: center center;
 }
-
 .nopadding {
   padding: 0px !important;
 }
@@ -287,7 +248,6 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .header_content {
   width: 100%;
   height: 148px;
@@ -297,19 +257,15 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .header.scrolled {
   background: rgba(24, 24, 24, 0.6);
 }
-
 .header.scrolled .header_content {
   height: 90px;
 }
-
 .header_content_inner {
   width: 100%;
 }
-
 .logo a {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
@@ -317,15 +273,12 @@ section {
   color: #ffffff;
   line-height: 0.75;
 }
-
 .main_nav {
   margin-left: 242px;
 }
-
 .main_nav ul li {
   position: relative;
 }
-
 .main_nav ul li::after {
   display: block;
   position: absolute;
@@ -348,18 +301,15 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .main_nav ul li.active::after,
 .main_nav ul li:hover::after {
   height: 100px;
   visibility: visible;
   opacity: 1;
 }
-
 .main_nav ul li:not(:last-child) {
   margin-right: 54px;
 }
-
 .main_nav ul li a {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -367,7 +317,6 @@ section {
   color: #ffffff;
   white-space: nowrap;
 }
-
 .header_phone {
   margin-right: 60px;
   font-family: "Oswald", sans-serif;
@@ -375,7 +324,6 @@ section {
   font-weight: 500;
   color: #ffffff;
 }
-
 .header_social {
   position: absolute;
   top: 0;
@@ -387,19 +335,15 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .header_social.scrolled {
   height: 90px;
 }
-
 .header_social ul {
   margin-top: 6px;
 }
-
 .header_social ul li:not(:last-child) {
   margin-right: 32px;
 }
-
 .header_social ul li a i {
   font-size: 14px;
   color: rgba(255, 255, 255, 1);
@@ -409,15 +353,12 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .header_social ul li a i:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-
 .hamburger {
   display: none;
 }
-
 .hamburger i {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.5);
@@ -428,7 +369,6 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .hamburger:hover i {
   color: rgba(255, 255, 255, 1);
 }
@@ -451,18 +391,15 @@ section {
   transition: all 500ms cubic-bezier(0.84, 0.38, 0.6, 0.85);
   z-index: 1000;
 }
-
 .menu.active {
   left: 0;
 }
-
 .menu_header {
   width: 100%;
   height: 148px;
   padding-left: 60px;
   padding-right: 60px;
 }
-
 .menu_logo a {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
@@ -470,7 +407,6 @@ section {
   color: #181818;
   line-height: 0.75;
 }
-
 .menu_close_container {
   width: 18px;
   height: 18px;
@@ -482,13 +418,11 @@ section {
   transform: rotate(45deg);
   cursor: pointer;
 }
-
 .menu_close {
   width: 100%;
   height: 100%;
   transform-style: preserve-3D;
 }
-
 .menu_close div {
   width: 100%;
   height: 2px;
@@ -500,7 +434,6 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .menu_close div:last-of-type {
   -webkit-transform: rotate(90deg) translateX(-2px);
   -moz-transform: rotate(90deg) translateX(-2px);
@@ -509,11 +442,9 @@ section {
   transform: rotate(90deg) translateX(-2px);
   transform-origin: center;
 }
-
 .menu_close:hover div {
   background: #937c6f;
 }
-
 .menu_content {
   position: absolute;
   left: 60px;
@@ -524,7 +455,6 @@ section {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .menu_content ul li a {
   font-size: 48px;
   font-weight: 500;
@@ -535,30 +465,24 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .menu_content ul li a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
-
 .menu_social {
   position: absolute;
   left: 60px;
   bottom: 30px;
 }
-
 .menu_phone {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
-  margin-right: 1000%;
 }
-
 .menu_social ul li:not(:last-child) {
   margin-right: 32px;
 }
-
 .menu_social ul li a i {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
@@ -568,7 +492,6 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .menu_social ul li a i:hover {
   color: #181818;
 }
@@ -581,12 +504,10 @@ section {
   width: 100%;
   height: 834px;
 }
-
 .home_slider_container {
   width: 100%;
   height: 100%;
 }
-
 .home_slider_content_container {
   position: absolute;
   top: 31.5%;
@@ -595,25 +516,21 @@ section {
   z-index: 1;
   text-align: center;
 }
-
 .home_title h2 {
   font-size: 100px;
   line-height: 1.1;
   font-weight: 400;
   color: #ffffff;
 }
-
 .home_page_nav {
   position: absolute;
   right: 119px;
   top: 44.2%;
   z-index: 2;
 }
-
 .home_page_nav ul li {
   position: relative;
 }
-
 .home_page_nav ul li a {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -624,15 +541,12 @@ section {
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
 }
-
 .home_page_nav ul li:not(:last-child) {
   margin-bottom: 32px;
 }
-
 .home_page_nav ul li span {
   margin-left: 30px;
 }
-
 .home_page_nav ul li::after {
   display: block;
   position: absolute;
@@ -650,14 +564,12 @@ section {
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
 }
-
 .home_page_nav ul li:hover::after {
   visibility: visible;
   opacity: 1;
   background: rgba(255, 255, 255, 1);
   width: calc(100% + 28px);
 }
-
 .home_page_nav ul li:hover a {
   color: rgba(255, 255, 255, 1);
 }
@@ -672,7 +584,6 @@ section {
   background: #ffffff;
   z-index: 1;
 }
-
 .home_search_container {
   position: absolute;
   top: -353px;
@@ -685,7 +596,6 @@ section {
   background: rgba(255, 255, 255, 0.26);
   border-radius: 12px;
 }
-
 .home_search_title {
   width: 247px;
   height: 55px;
@@ -701,7 +611,6 @@ section {
   font-weight: 400;
   text-align: center;
 }
-
 .home_search_content {
   width: 100%;
   background: #ffffff;
@@ -710,94 +619,80 @@ section {
   padding-left: 67px;
   padding-right: 83px;
 }
-
 .search_input {
   height: 50px;
   background: #f2f5f6;
   margin-left: 1%;
   border: none;
   outline: none;
+
   font-family: "Oswald", sans-serif;
   font-size: 14px !important;
   font-weight: 500 !important;
   color: #72728c !important;
 }
-
 .search_label {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1%;
   margin-right: 1%;
 }
-
 .search_input_1 {
   width: 25%;
 }
-
 .search_input_2 {
   width: 25%;
 }
-
 .search_input_3 {
   width: 25%;
 }
-
 .search_input_4 {
   width: 25%;
 }
-
 .search_input_5 {
-  width: 10%;
+  width: 15%;
   text-align: center;
 }
-
 .search_input_6 {
   width: 10%;
   text-align: center;
 }
-
 .search_input_7 {
   width: 10%;
   text-align: center;
 }
-
 .search_input::-webkit-input-placeholder {
   font-family: "Oswald", sans-serif;
   font-size: 14px !important;
   font-weight: 400 !important;
   color: #72728c !important;
 }
-
 .search_input:-moz-placeholder {
   font-family: "Oswald", sans-serif;
   font-size: 14px !important;
   font-weight: 400 !important;
   color: #72728c !important;
 }
-
 .search_input::-moz-placeholder {
   font-family: "Oswald", sans-serif;
   font-size: 14px !important;
   font-weight: 400 !important;
   color: #72728c !important;
 }
-
 .search_input:-ms-input-placeholder {
   font-family: "Oswald", sans-serif;
   font-size: 14px !important;
   font-weight: 400 !important;
   color: #72728c !important;
 }
-
 .search_input::input-placeholder {
   font-family: "Oswald", sans-serif;
   font-size: 14px !important;
   font-weight: 400 !important;
   color: #72728c !important;
 }
-
 .home_search_button {
-  margin-left: 1%;
+  margin-top: 2%;
   width: 161px;
   height: 52px;
   background: #181818;
@@ -821,7 +716,6 @@ section {
   background: #ffffff;
   z-index: 1;
 }
-
 .intro_background {
   position: absolute;
   top: -128px;
@@ -832,27 +726,22 @@ section {
   background-size: cover;
   background-position: center center;
 }
-
 .intro_container {
   width: 100%;
   border-bottom: solid 2px #e4e6e8;
   padding-top: 142px;
   padding-bottom: 121px;
 }
-
 .intro_icon {
   width: 70px;
   height: 71px;
 }
-
 .intro_icon img {
   max-width: 100%;
 }
-
 .intro_content {
   position: center;
 }
-
 .intro_title {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
@@ -870,7 +759,6 @@ section {
   padding-top: 115px;
   padding-bottom: 116px;
 }
-
 .section_subtitle {
   font-family: "Oswald", sans-serif;
   font-size: 12px;
@@ -880,24 +768,19 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-
 .section_title {
   color: #181818;
   margin-top: 26px;
 }
-
 .destinations_row {
   margin-top: 99px;
 }
-
 .destination_image {
   width: 100%;
 }
-
 .destination_image img {
   max-width: 100%;
 }
-
 .spec_offer {
   position: absolute;
   top: 15px;
@@ -906,7 +789,6 @@ section {
   height: 36px;
   background: #181818;
 }
-
 .spec_offer a {
   display: block;
   font-family: "Oswald", sans-serif;
@@ -915,37 +797,30 @@ section {
   line-height: 36px;
   font-weight: 400;
 }
-
 .destinations_container {
   width: calc(100% + 30px);
   left: -15px;
 }
-
 .destination {
   width: calc(100% / 3);
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 33px;
 }
-
 .destination_content {
 }
-
 .destination_title {
   margin-top: 15px;
 }
-
 .destination_title a {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #181818;
 }
-
 .destination_subtitle {
   margin-top: -4px;
 }
-
 .destination_price {
   font-size: 16px;
   font-weight: 700;
@@ -962,28 +837,23 @@ section {
   padding-top: 118px;
   padding-bottom: 115px;
 }
-
 .testimonials .section_title,
 .testimonials .section_subtitle {
   color: #ffffff;
 }
-
 .testimonials_slider_container {
   margin-top: 69px;
 }
-
 .testimonial {
   font-size: 30px;
   font-style: italic;
   color: #ffffff;
 }
-
 .testimonial_author {
   display: inline-block;
   margin-top: 79px;
   text-align: center;
 }
-
 .testimonial_author div:first-child {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
@@ -992,7 +862,6 @@ section {
   text-transform: uppercase;
   line-height: 0.85;
 }
-
 .testimonial_author div:last-child {
   font-family: "Oswald", sans-serif;
   font-size: 12px;
@@ -1002,17 +871,14 @@ section {
   line-height: 0.85;
   margin-left: 6px;
 }
-
 .test_nav {
   position: absolute;
   right: 119px;
   top: 42%;
 }
-
 .test_nav ul li {
   position: relative;
 }
-
 .test_nav ul li a {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -1023,15 +889,12 @@ section {
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
 }
-
 .test_nav ul li:not(:last-child) {
   margin-bottom: 32px;
 }
-
 .test_nav ul li span {
   margin-left: 30px;
 }
-
 .test_nav ul li::after {
   display: block;
   position: absolute;
@@ -1049,14 +912,12 @@ section {
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
 }
-
 .test_nav ul li:hover::after {
   visibility: visible;
   opacity: 1;
   background: rgba(255, 255, 255, 1);
   width: calc(100% + 28px);
 }
-
 .test_nav ul li:hover a {
   color: rgba(255, 255, 255, 1);
 }
@@ -1071,24 +932,19 @@ section {
   padding-top: 115px;
   padding-bottom: 115px;
 }
-
 .news_post:not(:last-child) {
   margin-bottom: 68px;
 }
-
 .news_post_image {
   width: 34.8%;
 }
-
 .news_post_image img {
   max-width: 100%;
 }
-
 .news_post_content {
   width: 65.2%;
   padding-left: 30px;
 }
-
 .news_post_date div:first-child {
   font-family: "Oswald", sans-serif;
   font-size: 48px;
@@ -1096,7 +952,6 @@ section {
   color: #181818;
   line-height: 0.75;
 }
-
 .news_post_date div:last-child {
   font-family: "Oswald", sans-serif;
   font-size: 11px;
@@ -1112,26 +967,21 @@ section {
   -o-transform: translateY(2px);
   transform: translateY(2px);
 }
-
 .news_post_title {
   margin-top: 17px;
 }
-
 .news_post_title a {
   font-family: "Oswald", sans-serif;
   font-size: 28px;
   font-weight: 400;
   color: #181818;
 }
-
 .news_post_category {
   margin-top: -5px;
 }
-
 .news_post_category ul li {
   display: inline-block;
 }
-
 .news_post_category ul li a {
   font-family: "Oswald", sans-serif;
   font-size: 9px;
@@ -1139,17 +989,14 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-
 .news_post_text {
   margin-top: 14px;
 }
-
 .travello {
   width: 100%;
   height: 659px;
   overflow: hidden;
 }
-
 .travello_content {
   position: absolute;
   top: 0;
@@ -1157,12 +1004,10 @@ section {
   width: 100%;
   height: 100%;
 }
-
 .travello_content_inner {
   width: 100%;
   height: 100%;
 }
-
 .travello_content_inner > div {
   position: absolute;
   top: 58%;
@@ -1170,21 +1015,18 @@ section {
   height: 100%;
   z-index: 1;
 }
-
 .travello_content_inner > div:first-child {
   left: 0;
   background: rgba(45, 143, 197, 0.7);
   transform-origin: top left;
   transform: rotate(12deg);
 }
-
 .travello_content_inner > div:last-child {
   right: 0;
   background: rgba(237, 35, 69, 0.7);
   transform-origin: top right;
   transform: rotate(-12deg);
 }
-
 .travello_container {
   position: absolute;
   top: 0;
@@ -1194,19 +1036,16 @@ section {
   z-index: 1;
   padding-bottom: 47px;
 }
-
 .travello_container a {
   display: block;
   width: 100%;
   height: 100%;
   text-align: center;
 }
-
 .travello_container a div {
   width: 100%;
   height: 100%;
 }
-
 .travello_title {
   font-family: "Oswald", sans-serif;
   font-size: 48px;
@@ -1214,7 +1053,6 @@ section {
   max-width: 210px;
   line-height: 1;
 }
-
 .travello_subtitle {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -1232,7 +1070,6 @@ section {
   position: relative;
   padding-top: 136px;
 }
-
 .newsletter_title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -1240,7 +1077,6 @@ section {
   color: #ffffff;
   line-height: 1.2;
 }
-
 .newsletter_subtitle {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -1248,11 +1084,9 @@ section {
   font-weight: 300;
   margin-top: 18px;
 }
-
 .newsletter_form_container {
   margin-top: 84px;
 }
-
 .newsletter_input {
   width: 100%;
   height: 50px;
@@ -1262,58 +1096,48 @@ section {
   padding-left: 22px;
   color: #ffffff;
 }
-
 .newsletter_input::-webkit-input-placeholder {
   font-size: 12px !important;
   font-weight: 400 !important;
   font-style: italic;
   color: #ffffff !important;
 }
-
 .newsletter_input:-moz-placeholder {
   font-size: 12px !important;
   font-weight: 400 !important;
   font-style: italic;
   color: #ffffff !important;
 }
-
 .newsletter_input::-moz-placeholder {
   font-size: 12px !important;
   font-weight: 400 !important;
   font-style: italic;
   color: #ffffff !important;
 }
-
 .newsletter_input:-ms-input-placeholder {
   font-size: 12px !important;
   font-weight: 400 !important;
   font-style: italic;
   color: #ffffff !important;
 }
-
 .newsletter_input::input-placeholder {
   font-size: 12px !important;
   font-weight: 400 !important;
   font-style: italic;
   color: #ffffff !important;
 }
-
 .newsletter_form > div:not(:last-child) {
   margin-right: 15px;
 }
-
 .newsletter_form > div:first-child {
   width: calc(100% - 176px);
 }
-
 .newsletter_form > div:first-child > div:first-child {
   width: calc((100% - 15px) * 0.35);
 }
-
 .newsletter_form > div:first-child > div:last-child {
   width: calc((100% - 15px) * 0.65);
 }
-
 .newsletter_form > div > div > div {
   position: absolute;
   left: 0;
@@ -1329,7 +1153,6 @@ section {
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
-
 .newsletter_button {
   width: 161px;
   height: 50px;
@@ -1344,36 +1167,29 @@ section {
   outline: none;
   cursor: pointer;
 }
-
 .footer_contact_row {
   margin-top: 80px;
   padding-bottom: 50px;
 }
-
 .footer_contact_item {
   width: 100%;
 }
-
 .footer_contact_icon {
   width: 68px;
   height: 68px;
 }
-
 .footer_contact_icon img {
   max-width: 100%;
 }
-
 .cr {
   width: 100%;
   height: 68px;
 }
-
 .cr div {
   font-size: 12px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.48);
 }
-
 .footer_contact_title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -1382,21 +1198,17 @@ section {
   text-transform: uppercase;
   margin-top: 18px;
 }
-
 .footer_contact_list {
   margin-top: 19px;
 }
-
 .footer_contact_list ul li {
   font-size: 14px;
   color: #ffffff;
   line-height: 1.71;
 }
-
 .footer_contact_list ul li:not(:last-child) {
   margin-bottom: 7px;
 }
-
 .flight_search {
   width: 100%;
   height: 100%;
@@ -1411,7 +1223,6 @@ section {
   justify-content: center;
   overflow: auto;
 }
-
 .button_price {
   padding: 0 12px;
   display: table-cell;
@@ -1421,7 +1232,6 @@ section {
   box-sizing: border-box;
   margin: 0;
 }
-
 .flight_search_button {
   margin-top: 1%;
   margin-bottom: 1%;
@@ -1439,7 +1249,6 @@ section {
   outline: none;
   cursor: pointer;
 }
-
 .time {
   display: block;
   font-size: 25px;
@@ -1447,7 +1256,6 @@ section {
   font: 20px "Oswald", sans-serif;
   box-sizing: border-box;
 }
-
 .start {
   width: 85px;
   display: table-cell;
@@ -1455,14 +1263,12 @@ section {
   box-sizing: border-box;
   margin-right: 10%;
 }
-
 .duration {
   width: 85px;
   display: table-cell;
   vertical-align: middle;
   box-sizing: border-box;
 }
-
 .flight_label {
   margin-right: 2%;
   font-family: "Oswald", sans-serif;
@@ -1470,7 +1276,6 @@ section {
   font-weight: 400 !important;
   color: #72728c !important;
 }
-
 .register_label {
   margin-top: auto;
   margin-bottom: auto;
@@ -1478,17 +1283,17 @@ section {
   font-family: "Oswald", sans-serif;
   font-size: 25px;
   font-weight: 400 !important;
-  font-weight: 400 !important;
   color: #72728c !important;
 }
-
 .register_input {
   margin-top: 2%;
-  height: 50px;
+  height: 40px;
   background: #f2f5f6;
   margin-right: 1%;
   border: none;
   outline: none;
+  border-radius: 8px;
+
   font-family: "Oswald", sans-serif;
   font-size: 14px !important;
   font-weight: 500 !important;
@@ -1498,43 +1303,77 @@ section {
 .register_input_1 {
   width: 20%;
 }
-
 .register_input_2 {
   width: 25%;
 }
-
 .register_input_3 {
-  width: 25%;
+  width: 20%;
 }
-
 .register_input_4 {
   text-align: center;
   width: 10%;
 }
-
 .register_input_5 {
   width: 10%;
 }
-
 .register_input_6 {
   width: 10%;
   text-align: center;
 }
-
 .register_input_7 {
   width: 10%;
   text-align: center;
 }
 
-/*Класс блока в котором человек указывает маил и телефон + кнопка SELECT и напись сверху*/
-.AdditionalInformation {
-  margin-bottom: 24px;
-  margin-top: 40px;
+.register_input_mail {
+  margin-top: 1%;
+  height: 40px;
+  background: #f2f5f6;
+  margin-right: 1%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #72728c !important;
 }
 
-/*Этот класс меняет атрибуты текста: "На почту мы отправим билет,вышлем уведомления об изменениях в рейсе или в случае других экстренных ситуаций"*/
-.StyledTypography {
-    margin-top:0px;
-  margin-bottom: 1.5%;
-  font-size: 18px;
+.register_input_phone {
+  margin-top: 1%;
+  height: 40px;
+  background: #f2f5f6;
+  margin-right: 1%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #72728c !important;
+}
+
+.byer_registration {
+  margin-top: 10px;
+}
+/*Стиль текса - На почту мы отправим билет, вышлем уведомления об изменениях в рейсе или в случае других экстренных ситуаций*/
+.warning_text {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+/*Стилизация поля с выбором пола мужского или женского*/
+.register_select {
+  margin-top: 2%;
+  height: 40px;
+  width: 100px !important;
+  background: #f2f5f6;
+  margin-right: 1%;
+  border-radius: 8px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #72728c !important;
+  border-width: 0px;
 }
