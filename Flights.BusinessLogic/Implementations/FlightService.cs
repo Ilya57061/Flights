@@ -22,6 +22,10 @@ namespace Flights.BusinessLogic.Implementations
             var model = _mapper.Map<FlightDto>(Find(id));
             return model;
         }
+        public DateTime GetTimeFlight(int id)
+        {
+            return Find(id).Start;
+        }
         public IEnumerable<FlightDto> Get(FlightFindDto model)
         {
 
@@ -37,12 +41,6 @@ namespace Flights.BusinessLogic.Implementations
         {
             var flight = _mapper.Map<Flight>(model);
             _context.Flights.Add(flight);
-            _context.SaveChanges();
-        }
-
-        public void Delete(int id)
-        {
-            _context.Flights.Remove(Find(id));
             _context.SaveChanges();
         }
 

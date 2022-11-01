@@ -14,7 +14,7 @@ namespace Flights.Controllers
         [Route("p")]
         public IActionResult Passengers()
         {
-            ViewBag.Passengers = 4;
+            ViewBag.Passengers = 1;
             @ViewBag.IdFlight=1;
             return View("~/Pages/Passenger.cshtml");
         }

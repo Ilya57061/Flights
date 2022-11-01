@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Flights.Common\Flights.Common.csproj" />
     <ProjectReference Include="..\Flights.Model\Flights.Model.csproj" />
   </ItemGroup>

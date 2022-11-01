@@ -14,6 +14,7 @@ builder.Services.AddTransient<IBuyerService, BuyerService>();
 builder.Services.AddTransient<IFlightService, FlightService>();
 builder.Services.AddTransient<IPassengerService, PassengerService>();
 builder.Services.AddTransient<ITicketService, TicketService>();
+builder.Services.AddTransient<IEmailService, EmailService>();
 var mappingConfig = new MapperConfiguration(mc => mc.AddProfile(new MapperProfile()));
 IMapper mapper = mappingConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
