@@ -1,0 +1,149 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\css\**" />
+    <Compile Remove="wwwroot\lib\**" />
+    <Content Remove="wwwroot\css\**" />
+    <Content Remove="wwwroot\lib\**" />
+    <EmbeddedResource Remove="wwwroot\css\**" />
+    <EmbeddedResource Remove="wwwroot\lib\**" />
+    <None Remove="wwwroot\css\**" />
+    <None Remove="wwwroot\lib\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Flights.BusinessLogic\Flights.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Flights.Model\Flights.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\about.jpg" />
+    <None Include="wwwroot\images\about_1.jpg" />
+    <None Include="wwwroot\images\around.svg" />
+    <None Include="wwwroot\images\beach.svg" />
+    <None Include="wwwroot\images\boat.svg" />
+    <None Include="wwwroot\images\camera.svg" />
+    <None Include="wwwroot\images\contact.jpg" />
+    <None Include="wwwroot\images\destinations.jpg" />
+    <None Include="wwwroot\images\destination_1.jpg" />
+    <None Include="wwwroot\images\destination_2.jpg" />
+    <None Include="wwwroot\images\destination_3.jpg" />
+    <None Include="wwwroot\images\destination_4.jpg" />
+    <None Include="wwwroot\images\destination_5.jpg" />
+    <None Include="wwwroot\images\destination_6.jpg" />
+    <None Include="wwwroot\images\destination_7.jpg" />
+    <None Include="wwwroot\images\destination_8.jpg" />
+    <None Include="wwwroot\images\destination_9.jpg" />
+    <None Include="wwwroot\images\elements.jpg" />
+    <None Include="wwwroot\images\footer_1.jpg" />
+    <None Include="wwwroot\images\home_slider.jpg" />
+    <None Include="wwwroot\images\intro.png" />
+    <None Include="wwwroot\images\island.svg" />
+    <None Include="wwwroot\images\latest_1.jpg" />
+    <None Include="wwwroot\images\latest_2.jpg" />
+    <None Include="wwwroot\images\latest_3.jpg" />
+    <None Include="wwwroot\images\mountain.svg" />
+    <None Include="wwwroot\images\news.jpg" />
+    <None Include="wwwroot\images\news_1.jpg" />
+    <None Include="wwwroot\images\news_2.jpg" />
+    <None Include="wwwroot\images\news_3.jpg" />
+    <None Include="wwwroot\images\news_4.jpg" />
+    <None Include="wwwroot\images\news_5.jpg" />
+    <None Include="wwwroot\images\news_6.jpg" />
+    <None Include="wwwroot\images\sign.svg" />
+    <None Include="wwwroot\images\suitcase.svg" />
+    <None Include="wwwroot\images\team_1.jpg" />
+    <None Include="wwwroot\images\team_2.jpg" />
+    <None Include="wwwroot\images\team_3.jpg" />
+    <None Include="wwwroot\images\team_4.jpg" />
+    <None Include="wwwroot\images\testimonials.jpg" />
+    <None Include="wwwroot\images\travello.jpg" />
+    <None Include="wwwroot\images\trekking.svg" />
+    <None Include="wwwroot\images\wallet.svg" />
+    <None Include="wwwroot\images\why.jpg" />
+    <None Include="wwwroot\images\why_1.jpg" />
+    <None Include="wwwroot\images\why_1.svg" />
+    <None Include="wwwroot\images\why_2.jpg" />
+    <None Include="wwwroot\images\why_2.svg" />
+    <None Include="wwwroot\images\why_3.jpg" />
+    <None Include="wwwroot\images\why_3.svg" />
+    <None Include="wwwroot\js\custom.js" />
+    <None Include="wwwroot\js\elements.js" />
+    <None Include="wwwroot\js\jquery-3.2.1.min.js" />
+    <None Include="wwwroot\js\news.js" />
+    <None Include="wwwroot\plugins\easing\easing.js" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\css\font-awesome.css" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\animated.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\core.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\fixed-width.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\font-awesome.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\icons.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\larger.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\list.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\mixins.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\path.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\screen-reader.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\stacked.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\less\variables.less" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_animated.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_core.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_icons.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_larger.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_list.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_mixins.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_path.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_stacked.scss" />
+    <None Include="wwwroot\plugins\font-awesome-4.7.0\scss\_variables.scss" />
+    <None Include="wwwroot\plugins\greensock\animation.gsap.min.js" />
+    <None Include="wwwroot\plugins\greensock\ScrollToPlugin.min.js" />
+    <None Include="wwwroot\plugins\greensock\TimelineMax.min.js" />
+    <None Include="wwwroot\plugins\greensock\TweenMax.min.js" />
+    <None Include="wwwroot\plugins\Isotope\isotope.pkgd.min.js" />
+    <None Include="wwwroot\plugins\OwlCarousel2-2.2.1\ajax-loader.gif" />
+    <None Include="wwwroot\plugins\OwlCarousel2-2.2.1\animate.css" />
+    <None Include="wwwroot\plugins\OwlCarousel2-2.2.1\owl.carousel.css" />
+    <None Include="wwwroot\plugins\OwlCarousel2-2.2.1\owl.carousel.js" />
+    <None Include="wwwroot\plugins\OwlCarousel2-2.2.1\owl.theme.default.css" />
+    <None Include="wwwroot\plugins\OwlCarousel2-2.2.1\owl.video.play.png" />
+    <None Include="wwwroot\plugins\parallax-js-master\parallax.min.js" />
+    <None Include="wwwroot\plugins\progressbar\progressbar.min.js" />
+    <None Include="wwwroot\plugins\scrollmagic\ScrollMagic.min.js" />
+    <None Include="wwwroot\plugins\scrollTo\jquery.scrollTo.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\styles\" />
+  </ItemGroup>
+
+</Project>

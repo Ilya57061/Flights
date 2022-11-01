@@ -1,0 +1,81 @@
+﻿
+<div class="intro">
+	<div class="intro_background" style="background-image:url(../images/intro.png)"></div>
+	<div class="container">
+		<div class="col">
+			<div class="intro_container">
+				<form action="/ticket" method="post" class="home_search_form" id="home_search_form">
+					<input type="hidden" name="idFlight" value="@ViewBag.IdFlight" />
+					<h1>Регистрация пассажиров</h1>
+					@for (int i = 0; i < ViewBag.Passengers; i++)
+					{
+						
+						<div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
+							<label for="firstName" class="register_label">Фамилия: </label>
+							<input type="text" id="firstName" class="register_input register_input_1" name="passengers[@i].firstName" placeholder="Иванов" required="required">
+							<label for="firstName" class="register_label">Имя: </label>
+							<input type="text" id="lastName" class="register_input register_input_2" name="passengers[@i].lastName" placeholder="Иван" required="required">
+							<label for="birthDate" class="register_label register_label_birthDate">Дата рождения: </label>
+							<input type="date" id="birthDate" class="register_input register_input_3" name="passengers[@i].birthDate" required="required">
+							<label for="genders" class="register_label">Пол: </label>
+							<select size="1" class="register_select">
+							<option>Мужской</option>
+							<option>Женский</option>
+							</select>
+							<!--<input list="genders" id="genders" type="text" class="register_input register_input_4" name="passengers[@i].gender" placeholder="М/Ж" required="required">-->
+							<label for="firstName" class="register_label">Номер паспорта: </label>
+							<input type="text" id="doc" class="register_input search_input_5" name="passengers[@i].docNumber" placeholder="АВ1234567" required="required">
+						</div>
+					}
+					<div>
+					<h1 style="margin-top: 24px;"> Регистрация покупателя</h1>
+					<div class="warning_text">
+						<p >На почту мы отправим билет, вышлем уведомления об изменениях в рейсе или в случае других экстренных ситуаций</p>
+					</div>
+					<div class="d-flex flex-lg-row flex-column align-items-start justify-content-start">
+					<label for="phone" class="register_label">Телефон:</label>
+					<input type="text" id="phone" class="register_input_phone" name="phone" placeholder="Телефон" size="18" />
+					<label for="mail" class="register_label">Электронная почта:</label>
+					<input type="text" id="mail" class="register_input_mail" name="mail" placeholder="Электронная почта" size="18" />
+					</div>
+					<button class="home_search_button" type="submit">Select</button>	
+					</div>
+				</form>
+				<datalist id="genders">
+			<option value="М">М</option>
+			<option value="Ж">Ж</option>
+		</datalist>
+			</div>
+		</div>
+	</div>
+</div>
+@section Search{
+	<div class="home_search">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_search_container">
+						<div class="home_search_title">Search for your trip</div>
+						<div class="home_search_content">
+							<form action="/flight" method="post" class="home_search_form" id="home_search_form">
+								<div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
+									<input type="text" class="search_input search_input_1" name="startAddress" placeholder="Откуда" required="required">
+									<input type="text" class="search_input search_input_2" name="arrivalAddress" placeholder="Куда" required="required">
+									<input type="date" class="search_input search_input_3" name="start" placeholder="Когда" required="required">
+									<input type="date" class="search_input search_input_4" name="duration" placeholder="Обратно" required="required">
+									<label for="adult" class="search_label">Взрослые: </label>
+									<input type="number" class="search_input search_input_5" step="1" min="1" max="5" value="1" name="adult" id="adult" />
+									<label for="kid" class="search_label">Дети: </label>
+									<input type="number" class="search_input search_input_6" step="1" min="0" max="5" value="0" name="kid" id="kid" />
+									<label for="baby" class="search_label">Младенцы: </label>
+									<input type="number" class="search_input search_input_7" step="1" min="0" max="5" value="0" name="baby" id="baby" />
+									<button class="home_search_button" type="submit">search</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	}

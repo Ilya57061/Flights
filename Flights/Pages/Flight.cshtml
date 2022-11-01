@@ -1,0 +1,57 @@
+﻿<div class="intro">
+	<div class="intro_background" style="background-image:url(../images/intro.png)"></div>
+	<div class="container">
+		<div class="col">
+			<div class="intro_container">
+				@foreach (var flight in ViewBag.Flights)
+				{
+					<form action="/passenger" method="post">
+						<input type="hidden" name="passengers" value="@ViewBag.Passengers" />
+						<div class="flight_search">
+							<input type="hidden" name="idFlight" value="@flight.Id" />
+							<label for="start" class="flight_label">Отправка: </label>
+							<div class="start" id="start"><div class="time">@flight.Start</div></div>
+							<label for="duration" class="flight_label">Прибытие: </label>
+							<div class="duration" id="duration"><div class="time">@flight.Duration</div></div>
+							<div class="button_price"><button action="submit" class="flight_search_button">@flight.Econom BYN</button></div>
+						</div>
+
+					</form>
+				}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+@section Search{
+	<div class="home_search">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_search_container">
+						<div class="home_search_title">Search for your trip</div>
+						<div class="home_search_content">
+							<form action="/flight" method="post" class="home_search_form" id="home_search_form">
+								<div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
+									<input type="text" class="search_input search_input_1" name="startAddress" placeholder="Откуда" required="required">
+									<input type="text" class="search_input search_input_2" name="arrivalAddress" placeholder="Куда" required="required">
+									<input type="date" class="search_input search_input_3" name="start" placeholder="Когда" required="required">
+									<input type="date" class="search_input search_input_4" name="duration" placeholder="Обратно" required="required">
+									<label for="adult" class="search_label">Взрослые: </label>
+									<input type="number" class="search_input search_input_5" step="1" min="1" max="5" value="1" name="adult" id="adult" />
+									<label for="kid" class="search_label">Дети: </label>
+									<input type="number" class="search_input search_input_6" step="1" min="0" max="5" value="0" name="kid" id="kid" />
+									<label for="baby" class="search_label">Младенцы: </label>
+									<input type="number" class="search_input search_input_7" step="1" min="0" max="5" value="0" name="baby" id="baby" />
+									<button class="home_search_button" type="submit">search</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	}
+	
