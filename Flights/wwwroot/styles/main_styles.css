@@ -612,6 +612,7 @@ section {
   text-align: center;
 }
 .home_search_content {
+  
   width: 100%;
   background: #ffffff;
   padding-top: 18px;
@@ -638,28 +639,43 @@ section {
   margin-right: 1%;
 }
 .search_input_1 {
+   margin-top: auto;
+  margin-bottom: auto;
   width: 25%;
 }
 .search_input_2 {
+  margin-top: auto;
+  margin-bottom: auto;
   width: 25%;
 }
 .search_input_3 {
+  margin-top: auto;
+  margin-bottom: auto;
   width: 25%;
 }
 .search_input_4 {
+  margin-top: auto;
+  margin-bottom: auto;
   width: 25%;
 }
 .search_input_5 {
+  margin-top: auto;
+  margin-bottom: auto;
   width: 15%;
   text-align: center;
 }
 .search_input_6 {
+  margin-top: auto;
+  margin-bottom: auto;
   width: 10%;
   text-align: center;
 }
 .search_input_7 {
+  margin-top: auto;
+  margin-bottom: auto;
   width: 10%;
   text-align: center;
+  margin-right: 1%;
 }
 .search_input::-webkit-input-placeholder {
   font-family: "Oswald", sans-serif;
@@ -667,32 +683,10 @@ section {
   font-weight: 400 !important;
   color: #72728c !important;
 }
-.search_input:-moz-placeholder {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  color: #72728c !important;
-}
-.search_input::-moz-placeholder {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  color: #72728c !important;
-}
-.search_input:-ms-input-placeholder {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  color: #72728c !important;
-}
-.search_input::input-placeholder {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  color: #72728c !important;
-}
+
 .home_search_button {
-  margin-top: 2%;
+  margin-top: auto;
+  margin-right: auto;
   width: 161px;
   height: 52px;
   background: #181818;

@@ -29,7 +29,7 @@ namespace Flights.BusinessLogic.Implementations
         }
         private Ticket Find(int id)
         {
-            Ticket ticket = _context.Tickets.FirstOrDefault(x => x.Id == id);
+           Ticket ticket= _context.Tickets.FirstOrDefault(x => x.Id == id);
             if (ticket is null)
             {
                 throw new Exception("Ticket null");
