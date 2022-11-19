@@ -21,7 +21,7 @@ namespace Flights.BusinessLogic.Implementations
             using (SmtpClient client = new SmtpClient())
             {
                 client.Connect("smtp.gmail.com", 465, true);
-                 client.Authenticate("gmail", "password app");
+                 client.Authenticate("gmail", "password app.");
                 client.Send(emailMessage);
                  client.Disconnect(true);
             }
