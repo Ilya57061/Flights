@@ -29,11 +29,27 @@ namespace Flights.BusinessLogic.Implementations
         public IEnumerable<FlightDto> Get(FlightFindDto model)
         {
 
-            var query = _context.Flights.Where(m => m!.ArrivalAirportId == GetAirport(model.ArrivalAddress) &&
-            m!.StartAirportId == GetAirport(model.StartAddress) &&m!.Start.Date==model!.Start.Date);
-            query = query.Where(m => m.CountSeats + model.CountSeats <= _context.Planes.FirstOrDefault(p => p.Id == m.PlaneId).CountSeats);
+            IQueryable<Flight> flights = _context.Flights;
+            if (model.ArrivalAddress!=null)
+            {
+                flights = flights.Where(m => m.ArrivalAirportId == GetAirport(model.ArrivalAddress));
+            }
+            if (model.StartAddress!=null)
+            {
+                flights = flights.Where(m=>m.StartAirportId == GetAirport(model.StartAddress));
+            }
+            if (model.Start!=default && model.Start>=DateTime.Today)
+            {
+                flights = flights.Where(m=> m.Start.Date == model.Start.Date);
+            }
+            if (model.CountSeats!=0)
+            {
+                flights = flights.Where(m=> m.CountSeats + model.CountSeats <= _context.Planes.FirstOrDefault(p => p.Id == m.PlaneId).CountSeats);
+            }
 
-            var models = _mapper.Map <List<FlightDto>>(query);
+           
+
+            var models = _mapper.Map <List<FlightDto>>(flights);
             return models;
             
         }

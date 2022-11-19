@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flights", "Flights\Flights.csproj", "{B27B2886-CBF3-42A2-9BBC-AD14C8C6CC30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flights", "Flights\Flights.csproj", "{B27B2886-CBF3-42A2-9BBC-AD14C8C6CC30}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Api", "1. Api", "{6883D872-3EE8-4037-A2FE-E8CFE881FF71}"
 EndProject
@@ -13,11 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Model", "3. Model", "{3B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Common", "4. Common", "{8A27CEFC-6EB5-4A7F-84FF-41CE42E8EFB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flights.BusinessLogic", "Flights.BusinessLogic\Flights.BusinessLogic.csproj", "{EEE116CD-B0B0-4682-B32F-943416C985BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flights.BusinessLogic", "Flights.BusinessLogic\Flights.BusinessLogic.csproj", "{EEE116CD-B0B0-4682-B32F-943416C985BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flights.Model", "Flights.Model\Flights.Model.csproj", "{9161FE56-3C89-429B-A8E4-C45E1082E8EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flights.Model", "Flights.Model\Flights.Model.csproj", "{9161FE56-3C89-429B-A8E4-C45E1082E8EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flights.Common", "Flights.Common\Flights.Common.csproj", "{4D1E5E1F-2EA8-4749-B6B4-64CC44500DE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flights.Common", "Flights.Common\Flights.Common.csproj", "{4D1E5E1F-2EA8-4749-B6B4-64CC44500DE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Test", "5. Test", "{8F6C4F78-F5A8-488E-9E73-337E2C7336BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flights.Tests", "Flights.Tests\Flights.Tests.csproj", "{3A12F376-4744-48BA-A58E-AE7DA6CFDDE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{4D1E5E1F-2EA8-4749-B6B4-64CC44500DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D1E5E1F-2EA8-4749-B6B4-64CC44500DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D1E5E1F-2EA8-4749-B6B4-64CC44500DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A12F376-4744-48BA-A58E-AE7DA6CFDDE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A12F376-4744-48BA-A58E-AE7DA6CFDDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A12F376-4744-48BA-A58E-AE7DA6CFDDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A12F376-4744-48BA-A58E-AE7DA6CFDDE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{EEE116CD-B0B0-4682-B32F-943416C985BF} = {15647579-5FE3-4D53-AB2A-4C020CB23C8F}
 		{9161FE56-3C89-429B-A8E4-C45E1082E8EE} = {3BFB3A29-34D5-49CB-94C6-C42BD6843FD5}
 		{4D1E5E1F-2EA8-4749-B6B4-64CC44500DE7} = {8A27CEFC-6EB5-4A7F-84FF-41CE42E8EFB7}
+		{3A12F376-4744-48BA-A58E-AE7DA6CFDDE5} = {8F6C4F78-F5A8-488E-9E73-337E2C7336BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {36E73B27-A486-4D9E-9AB3-96CF71CB3E0F}

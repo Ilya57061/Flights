@@ -9,7 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 string connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connection));
-builder.Services.AddTransient<IPlaneService, PlaneService>();
 builder.Services.AddTransient<IBuyerService, BuyerService>();
 builder.Services.AddTransient<IFlightService, FlightService>();
 builder.Services.AddTransient<IPassengerService, PassengerService>();
