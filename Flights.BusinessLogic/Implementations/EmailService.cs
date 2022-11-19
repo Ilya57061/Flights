@@ -13,8 +13,6 @@ namespace Flights.BusinessLogic.Implementations
 
             emailMessage.From.Add(new MailboxAddress("Travello", "gmail"));
 
-            emailMessage.From.Add(new MailboxAddress("Travello", "xxxxxx"));
-
             emailMessage.To.Add(new MailboxAddress("", email));
             emailMessage.Subject = subject;
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
@@ -27,8 +25,6 @@ namespace Flights.BusinessLogic.Implementations
                 client.Connect("smtp.gmail.com", 465, true);
 
                  client.Authenticate("gmail", "password app.");
-
-                 client.Authenticate("xxxxxx", "xxxxxxxxxx");
 
                 client.Send(emailMessage);
                  client.Disconnect(true);
