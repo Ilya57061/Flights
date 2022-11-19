@@ -9,15 +9,18 @@ namespace Flights.Controllers
     {
 
         private readonly IPassengerService _passengerService;
-        public PassengerController(IPassengerService passengerService)
+        private readonly IFlightService _flightService;
+        public PassengerController(IPassengerService passengerService, IFlightService flightService)
         {
             _passengerService = passengerService;
+            _flightService = flightService;
         }
         [HttpPost]
         public ActionResult Passengers([FromForm]int passengers, [FromForm] int idFlight)
         {
             ViewBag.Passengers = passengers;
-            ViewBag.IdFlight = idFlight;
+            ViewBag.Price = _flightService.Get(idFlight).Econom*passengers;
+            ViewBag.idFlight = idFlight;
             return View("~/Pages/Passenger.cshtml");
         }
 

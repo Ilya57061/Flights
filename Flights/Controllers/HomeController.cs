@@ -11,13 +11,7 @@ namespace Flights.Controllers
         {
             return View("~/Pages/Index.cshtml");
         }
-        [Route("p")]
-        public IActionResult Passengers()
-        {
-            ViewBag.Passengers = 1;
-            @ViewBag.IdFlight=1;
-            return View("~/Pages/Passenger.cshtml");
-        }
+ 
  
     }
 }

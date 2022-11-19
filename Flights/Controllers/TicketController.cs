@@ -42,7 +42,7 @@ namespace Flights.Controllers
 
             ViewBag.IdFlight = idFlight;
 
-            return View("~/Pages/Passenger.cshtml");
+            return View("~/Pages/Index.cshtml");
         }
     }
 }

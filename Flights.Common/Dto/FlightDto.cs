@@ -1,7 +1,4 @@
-﻿
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Flights.Common.Dto
+﻿namespace Flights.Common.Dto
 {
     public class FlightDto
     {

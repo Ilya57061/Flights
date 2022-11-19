@@ -38,7 +38,7 @@ namespace Flights.BusinessLogic.Implementations
             {
                 flights = flights.Where(m=>m.StartAirportId == GetAirport(model.StartAddress));
             }
-            if (model.Start!=default)
+            if (model.Start!=default && model.Start>=DateTime.Today)
             {
                 flights = flights.Where(m=> m.Start.Date == model.Start.Date);
             }
@@ -47,9 +47,7 @@ namespace Flights.BusinessLogic.Implementations
                 flights = flights.Where(m=> m.CountSeats + model.CountSeats <= _context.Planes.FirstOrDefault(p => p.Id == m.PlaneId).CountSeats);
             }
 
-            //var query = _context.Flights.Where(m => m!.ArrivalAirportId == GetAirport(model.ArrivalAddress) &&
-            //m!.StartAirportId == GetAirport(model.StartAddress) &&m!.Start.Date==model!.Start.Date);
-            //query = query.Where(m => m.CountSeats + model.CountSeats <= _context.Planes.FirstOrDefault(p => p.Id == m.PlaneId).CountSeats);
+           
 
             var models = _mapper.Map <List<FlightDto>>(flights);
             return models;
